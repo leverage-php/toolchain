@@ -12,7 +12,7 @@
             "name": "Architech Labs Ltd"
         }
     ],
-    "require-dev": {
+    "require": {
         "phpunit/phpunit": "^9.5"
     }
 }
