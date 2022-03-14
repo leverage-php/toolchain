@@ -2,10 +2,17 @@
     "name": "architech/php-tools",
     "description": "Internal library to house our developer toolchain.",
     "license": "Commercial",
+    "autoload": {
+        "psr-4": {
+            "Architech\\Tools\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Architech Labs Ltd"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
 }
