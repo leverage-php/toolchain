@@ -1,0 +1,11 @@
+{
+    "name": "architech/php-tools",
+    "description": "Internal library to house our developer toolchain.",
+    "license": "Commercial",
+    "authors": [
+        {
+            "name": "Architech Labs Ltd"
+        }
+    ],
+    "require": {}
+}
