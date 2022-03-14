@@ -4,5 +4,8 @@ services:
     build:
       context: .
     container_name: architech-php-tools
+    user: ${UID}:${GID}
+    env_file:
+      - .env
     volumes:
       - .:/app
