@@ -15,5 +15,8 @@ RUN mv composer /usr/local/bin/composer
 
 COPY php.ini /usr/local/etc/php/conf.d/php.ini
 
+# create default user
+RUN useradd --create-home --shell /bin/bash --uid 1000 dev
+
 RUN mkdir /app
 WORKDIR /app
