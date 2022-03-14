@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker-compose run php vendor/bin/phpstan analyse --level 8 src test
