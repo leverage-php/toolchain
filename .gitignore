@@ -1,4 +1,5 @@
 .env
+.php-cs-fixer.cache
 
 # Node artifact files
 node_modules/
