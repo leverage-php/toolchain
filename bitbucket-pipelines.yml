@@ -1,4 +1,7 @@
-image: composer:2.0
+image:
+  name: architechlabs/php-tools
+  username: $DOCKER_HUB_USERNAME
+  password: $DOCKER_HUB_PASSWORD
 
 pipelines:
   default:
