@@ -1,5 +1,6 @@
 .env
 .php-cs-fixer.cache
+.phplint-cache
 
 # Node artifact files
 node_modules/
