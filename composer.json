@@ -1,5 +1,5 @@
 {
-    "name": "architech/php-tools",
+    "name": "architech/toolchain",
     "description": "Internal library to house our developer toolchain.",
     "license": "Commercial",
     "autoload": {
