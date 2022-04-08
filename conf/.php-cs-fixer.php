@@ -59,7 +59,7 @@ return (new PhpCsFixer\Config)
         'no_blank_lines_after_class_opening' => true,
         'no_php4_constructor' => true,
         'ordered_class_elements' => [
-            'sort_algorithm' => 'alpha',
+            'sort_algorithm' => 'none',
         ],
         'self_accessor' => true,
         'single_class_element_per_statement' => true,
