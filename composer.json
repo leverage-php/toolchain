@@ -12,6 +12,14 @@
             "name": "Architech Labs Ltd"
         }
     ],
+    "bin": [
+        "bin/codestyle",
+        "bin/lint",
+        "bin/php",
+        "bin/static",
+        "bin/test",
+        "bin/verify"
+    ],
     "require": {
         "friendsofphp/php-cs-fixer": "^3.7",
         "overtrue/phplint": "^4.1",

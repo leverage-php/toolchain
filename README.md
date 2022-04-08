@@ -10,57 +10,30 @@ It provides -
 - Linting using phplint
 - Static analysis using PHPStan with a phpstan.neon config file
 - Unit testing using PHPUnit with the PHPStan extension installed
+- A verify script that runs them all to make it easy to test everything before
+you push
 
-## Tooling
+## Usage
 
-### Docker
-
-The provided Dockerfile is capable of running everything.  Checkout docker-compose.yml for an example of the minimum config required to build and run it.
-
-### PHP CS Fixer
-
-PHP Tools provides a DFY config file for PHP CS Fixer.  You'll need to reach
-inside the vendor directory for this project to access it.
-
-Remove --dry-run to execute the diffs.
+Include the private repo in composer.json -
 
 ```
-docker-compose run php vendor/bin/php-cs-fixer fix \
-    --config vendor/architech/php-tools/conf/.php-cs-fixer.php \
-    --diff \
-    --dry-run \
-    src/ test/
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@bitbucket.org:prestigedigital/php-toolchain.git"
+        }
+    ],
+    "require-dev": {
+        "architech/toolchain": "*"
+    },
 ```
 
-### PHPLint
+This will install all the scripts into your `vendor/bin` directory.
 
-PHPLint requires no additional config and can be run straight out of the box.
-
-```
-docker-compose run php vendor/bin/phplint . --exclude=vendor
-```
-
-### PHPStan
-
-PHP Tools provides a DFY config file for PHPStan.  You'll need to reach inside the vendor directory for this project to access it.
+Most stuff will "just work" but you'll probably want to symlink PHPStan's config
+file so your editor knows what the settings are.
 
 ```
-docker-compose run php vendor/bin/phpstan analyse \
-    -c vendor/architech/php-tools/conf/phpstan.neon \
-    --level 8 \
-    src/ test/
+ln -s vendor/architech/toolchain/conf/phpstan.neon phpstan.neon
 ```
-
-### PHPUnit
-
-PHPUnit requires no additional config and can be run straight out of the box.
-
-```
-docker-compose run php vendor/bin/phpunit test/
-```
-
-## Development
-
-If you need to contribute to this project, you should check out the scripts in dev/, specifically dev/verify.  That is setup to run the same checks as BitBucket pipeline will so you can run them locally without needing to push to run all the tools together.
-
-It'll tell you what steps failed, then you can rerun just the steps you need from dev/ to get the full output.
