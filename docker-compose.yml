@@ -1,11 +1,10 @@
 version: "3.7"
 services:
   php:
-    build:
-      context: .
     container_name: architech-php-tools
-    user: ${UID}:${GID}
     env_file:
       - .env
+    image: architechlabs/php
+    user: ${UID}:${GID}
     volumes:
       - .:/app
