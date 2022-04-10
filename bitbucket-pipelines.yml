@@ -1,7 +1,5 @@
 image:
-  name: architechlabs/php-tools
-  username: $DOCKER_HUB_USERNAME
-  password: $DOCKER_HUB_PASSWORD
+  name: architechlabs/php
 
 pipelines:
   default:
