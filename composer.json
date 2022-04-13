@@ -1,7 +1,7 @@
 {
     "name": "architech/toolchain",
-    "description": "Internal library to house our developer toolchain.",
-    "license": "Commercial",
+    "description": "Highly opinated PHP8.1 toolchain.",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Architech\\Tools\\": "src/"
@@ -9,7 +9,7 @@
     },
     "authors": [
         {
-            "name": "Architech Labs Ltd"
+            "name": "Andy Fletcher"
         }
     ],
     "bin": [
