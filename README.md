@@ -15,15 +15,7 @@ you push
 
 ## Usage
 
-Include the private repo in composer.json -
-
 ```
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@bitbucket.org:prestigedigital/php-toolchain.git"
-        }
-    ],
     "require-dev": {
         "architech/toolchain": "*"
     },
