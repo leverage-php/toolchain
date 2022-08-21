@@ -1,6 +1,0 @@
-#!/bin/bash
-
-./dev/codestyle 1> /dev/null || echo "codestyle failed"
-./dev/lint 1> /dev/null || echo "phplint failed"
-./dev/phpstan 1> /dev/null || echo "phpstan failed"
-./dev/test 1> /dev/null || echo "phpunit failed"

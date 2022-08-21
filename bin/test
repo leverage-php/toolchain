@@ -1,11 +1,3 @@
 #!/bin/bash
 
-readonly DEFAULT=test
-
-if [ $# -eq 0 ]; then
-    readonly ARGS=$DEFAULT
-else
-    readonly ARGS=$@
-fi
-
-docker-compose run php vendor/bin/phpunit $ARGS
+docker-compose run php vendor/bin/phpunit test

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./vendor/bin/codestyle 1> /dev/null || echo "codestyle failed"
+./vendor/bin/lint 1> /dev/null || echo "phplint failed"
+./vendor/bin/static 1> /dev/null || echo "phpstan failed"
+./vendor/bin/test 1> /dev/null || echo "phpunit failed"
