@@ -1,6 +1,6 @@
 {
     "name": "architech/toolchain",
-    "description": "Highly opinated PHP8.1 toolchain.",
+    "description": "Highly opinionated PHP toolchain.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -13,18 +13,18 @@
         }
     ],
     "bin": [
-        "bin/codestyle",
-        "bin/lint",
-        "bin/php",
-        "bin/static",
-        "bin/test",
-        "bin/verify"
+        "dist/codestyle",
+        "dist/lint",
+        "dist/php",
+        "dist/static",
+        "dist/test",
+        "dist/verify"
     ],
     "require": {
-        "friendsofphp/php-cs-fixer": "^3.7",
-        "overtrue/phplint": "^4.1",
-        "phpstan/phpstan": "^1.4",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5"
+        "friendsofphp/php-cs-fixer": "3.*",
+        "overtrue/phplint": "5.*",
+        "phpstan/phpstan": "1.*",
+        "phpstan/phpstan-phpunit": "1.*",
+        "phpunit/phpunit": "9.*"
     }
 }
