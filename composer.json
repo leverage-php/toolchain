@@ -1,5 +1,5 @@
 {
-    "name": "leverage/toolchain",
+    "name": "leverage-php/toolchain",
     "description": "Highly opinionated PHP toolchain.",
     "license": "MIT",
     "autoload": {
