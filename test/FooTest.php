@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Test;
-
-use Architech\Tools\Foo;
-use Architech\Tools\Hello;
+use Leverage\Toolchain\Foo;
+use Leverage\Toolchain\Hello;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

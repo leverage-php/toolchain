@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   php:
-    container_name: architech-php-tools
+    container_name: leverage-toolchain
     env_file:
       - .env
     image: architechlabs/php

@@ -1,4 +1,4 @@
-# architech/php-tools
+# Leverage Toolchain
 
 ## Introduction
 
@@ -17,7 +17,7 @@ you push
 
 ```
     "require-dev": {
-        "architech/toolchain": "*"
+        "leverage/toolchain": "*"
     },
 ```
 
@@ -27,5 +27,5 @@ Most stuff will "just work" but you'll probably want to symlink PHPStan's config
 file so your editor knows what the settings are.
 
 ```
-ln -s vendor/architech/toolchain/conf/phpstan.neon phpstan.neon
+ln -s vendor/leverage/toolchain/conf/phpstan.neon phpstan.neon
 ```

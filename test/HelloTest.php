@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Test\Tools;
-
-use Architech\Tools\Hello;
+use Leverage\Toolchain\Hello;
 use PHPUnit\Framework\TestCase;
 
 class HelloTest extends TestCase

@@ -1,10 +1,10 @@
 {
-    "name": "architech/toolchain",
+    "name": "leverage/toolchain",
     "description": "Highly opinionated PHP toolchain.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Architech\\Tools\\": "src/"
+            "Leverage\\Toolchain\\": "src/"
         }
     },
     "authors": [

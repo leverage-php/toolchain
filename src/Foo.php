@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Architech\Tools;
+namespace Leverage\Toolchain;
 
 class Foo
 {
