@@ -21,6 +21,7 @@
         "dist/verify"
     ],
     "require": {
+        "dg/bypass-finals": "1.*",
         "friendsofphp/php-cs-fixer": "3.*",
         "overtrue/phplint": "5.*",
         "phpstan/phpstan": "1.*",
