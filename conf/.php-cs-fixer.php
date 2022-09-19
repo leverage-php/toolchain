@@ -53,6 +53,7 @@ return (new PhpCsFixer\Config)
             ],
         ],
         'class_definition' => [
+            'inline_constructor_arguments' => false,
             'single_line' => true,
             'space_before_parenthesis' => true,
         ],
