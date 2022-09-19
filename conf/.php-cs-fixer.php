@@ -198,7 +198,6 @@ return (new PhpCsFixer\Config)
         'phpdoc_return_self_reference' => true,
         'phpdoc_scalar' => true,
         'phpdoc_single_line_var_spacing' => true,
-        'phpdoc_to_comment' => true,
         'phpdoc_trim_consecutive_blank_line_separation' => true,
         'phpdoc_trim' => true,
         'phpdoc_types' => true,
