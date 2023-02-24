@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker-compose run php vendor/bin/php-cs-fixer fix \
+    --config conf/.php-cs-fixer.php \
+    --diff \
+    src/ test/
