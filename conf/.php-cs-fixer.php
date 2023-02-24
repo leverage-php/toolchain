@@ -2,6 +2,7 @@
 
 return (new PhpCsFixer\Config)
     ->setRiskyAllowed(true)
+    ->registerCustomFixers(new PedroTroller\CS\Fixer\Fixers())
     ->setRules([
         '@PSR2' => true,
 
@@ -265,6 +266,12 @@ return (new PhpCsFixer\Config)
         'no_whitespace_in_blank_line' => true,
         'types_spaces' => [
             'space' => 'single',
+        ],
+        #endregion
+
+        #region Custom
+        'PedroTroller/line_break_between_method_arguments' => [
+            'max-args' => 0,
         ],
         #endregion
     ])
