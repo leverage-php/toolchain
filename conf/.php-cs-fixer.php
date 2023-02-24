@@ -233,16 +233,6 @@ return (new PhpCsFixer\Config)
 
         #region Whitespace
         'array_indentation' => true,
-        'blank_line_before_statement' => [
-            'statements' => [
-                'do',
-                'for',
-                'foreach',
-                'if',
-                'throw',
-                'while',
-            ],
-        ],
         'compact_nullable_typehint' => true,
         'method_chaining_indentation' => true,
         'no_extra_blank_lines' => [
