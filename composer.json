@@ -14,6 +14,7 @@
     ],
     "bin": [
         "dist/codestyle",
+        "dist/codestyle-fix",
         "dist/lint",
         "dist/php",
         "dist/static",
