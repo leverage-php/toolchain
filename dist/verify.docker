@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./vendor/bin/codestyle.docker 1> /dev/null || echo "codestyle failed"
+./vendor/bin/lint.docker 1> /dev/null || echo "phplint failed"
+./vendor/bin/static.docker 1> /dev/null || echo "phpstan failed"
+./vendor/bin/test.docker 1> /dev/null || echo "phpunit failed"
