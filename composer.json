@@ -13,13 +13,13 @@
         }
     ],
     "bin": [
-        "dist/codestyle",
-        "dist/codestyle-fix",
-        "dist/lint",
-        "dist/php",
-        "dist/static",
-        "dist/test",
-        "dist/verify"
+        "dist/codestyle.docker",
+        "dist/codestyle-fix.docker",
+        "dist/lint.docker",
+        "dist/php.docker",
+        "dist/static.docker",
+        "dist/test.docker",
+        "dist/verify.docker"
     ],
     "require": {
         "dg/bypass-finals": "1.*",
