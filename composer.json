@@ -29,5 +29,13 @@
         "phpstan/phpstan": "1.*",
         "phpstan/phpstan-phpunit": "1.*",
         "phpunit/phpunit": "9.*"
+    },
+    "require-dev": {
+        "cyclonedx/cyclonedx-php-composer": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "cyclonedx/cyclonedx-php-composer": true
+        }
     }
 }
