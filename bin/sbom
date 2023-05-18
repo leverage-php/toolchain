@@ -1,0 +1,9 @@
+#!/bin/bash
+
+project_name=leverage-php-toolchain
+output_sbom_path=/app/var/sbom/"$project_name"_composer-sbom.json
+
+docker-compose run php composer CycloneDX:make-sbom \
+  --omit=dev \
+  --output-format=JSON \
+  --output-file=$output_sbom_path
