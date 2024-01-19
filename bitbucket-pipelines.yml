@@ -1,5 +1,5 @@
 image:
-  name: architechlabs/php
+  name: architechlabs/php:8.3
 
 pipelines:
   default:
