@@ -23,7 +23,7 @@
     ],
     "require": {
         "dg/bypass-finals": "1.*",
-        "friendsofphp/php-cs-fixer": "<=3.59.2",
+        "friendsofphp/php-cs-fixer": "^3.6",
         "overtrue/phplint": "5.*",
         "pedrotroller/php-cs-custom-fixer": "^2.30",
         "phpstan/phpstan": "1.*",
