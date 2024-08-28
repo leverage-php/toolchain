@@ -3,3 +3,6 @@ includes:
 
 parameters:
     inferPrivatePropertyTypeFromConstructor: true
+    ignoreErrors:
+        -
+            identifier: missingType.iterableValue
